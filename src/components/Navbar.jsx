@@ -6,10 +6,10 @@ import axios from 'axios'
 const Navbar = () => {
   return (
     <div id="acc">
-        <AppBar sx={{ backgroundColor: 'orange' }}>
+        <AppBar sx={{ backgroundColor: 'green'}}>
             <Toolbar>
             {/* <Box component="img" alt="My Logo" src="" /> */}
-              <Typography variant='h3' color='#000'> Vkart </Typography> 
+              <Typography variant='h3' color='#000'> UseMe </Typography> 
                 <Link to='/B'>
                 <Button variant='contained'>HOME</Button>
                 </Link>
