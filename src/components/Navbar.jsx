@@ -1,35 +1,27 @@
-import { AppBar, Button, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material'
+import Button from '@mui/material/Button';
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
+import axios from 'axios'
 const Navbar = () => {
   return (
-    <div>
-        <AppBar>
+    <div id="acc">
+        <AppBar sx={{ backgroundColor: 'orange' }}>
             <Toolbar>
-                   <Typography variant="h6">Raapp</Typography > &nbsp;&nbsp;
-               <Link to="/l">
-                   <Button variant='contained'>Login</Button>
-                   </Link> &nbsp;
-                <Link to="/s" >
-                   <Button variant='contained'>Signup</Button>
-                   </Link>&nbsp;
-                <Link to="/state">
-                   <Button variant='contained'>state</Button>
-                   </Link>&nbsp;
-               <Link to="/ct">
-                   <Button variant='contained'>count</Button>
-                   </Link>&nbsp;
-               <Link to="/api">
-                   <Button variant='contained'>api</Button>
-                   </Link>&nbsp;
-               <Link to="/poki">
-                   <Button variant='contained'>poki</Button>
-                   </Link>&nbsp;
-              </Toolbar>
+            {/* <Box component="img" alt="My Logo" src="" /> */}
+              <Typography variant='h3' color='#000'> Vkart </Typography> 
+                <Link to='/B'>
+                <Button variant='contained'>HOME</Button>
+                </Link>
+                <Link to='/A'>
+                <Button variant='contained'>Add</Button>
+                </Link>
+            </Toolbar>
         </AppBar>
     </div>
   )
 }
+
+
 
 export default Navbar
